@@ -4,6 +4,7 @@
 int main() {
   // Declare individual variables for employee information
   int id;
+int salary;
   std::string name;
   std::string department;
 
@@ -14,12 +15,14 @@ int main() {
   std::getline(std::cin >> std::ws, name); // Get entire name with spaces
   std::cout << "Enter employee department: ";
   std::getline(std::cin >> std::ws, department);
+ std::cout << "Enter Salary: ";
+  std::cin>>salary;
 
   // Display employee information
   std::cout << "\nEmployee Information:\n";
   std::cout << "ID: " << id << std::endl;
   std::cout << "Name: " << name << std::endl;
   std::cout << "Department: " << department << std::endl;
-
+std::cout << "Salary: " << salary << std::endl;
   return 0;
 }
